@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/main.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; padding: 20px;}
+    .attribution a { color: black; text-decoration: none; }
+    .attribution{background-color: #EEE; color: gray;}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-nav">
+      <img src="./images/icon-menu.svg" alt="menu" class="menu">
+      <img src="./images/logo.svg" alt="logo" class="logo">
+      
+      <nav class="nav">
+        <img src="./images/icon-close.svg" alt="close" class="close-2">
+        <ul>
+          
+          <li ><a href="#" >Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="cart-avatar">
+      <img src="./images/icon-cart.svg" alt="cart" id="cart" class="cart">
+      <img src="./images/image-avatar.png" alt="avatar" id="avatar" class="avatar">
+    </div>
+    <div class="cart-container" id="cart-container">
+      <div class="cart-header">Cart <span class="close-1">X</span></div>
+      <hr>
+      <div class="item">
+        Your Cart is Empty
+      </div>
+    </div>
+    <div class="item-quantity">0</div>
+  </header>
+
+
+  <section class="slider-section">
+   <div class="container">
+     <img src="./images/icon-close.svg" alt="close" class="close" id="close">
+    <div class="img-slider-1">
+      <img src="./images/image-product-1.jpg" alt="product" class="active" >
+      <img src="./images/image-product-2.jpg" alt="product">
+      <img src="./images/image-product-3.jpg" alt="product">
+      <img src="./images/image-product-4.jpg" alt="product">
+    </div>
+    <div class="contorl-1">
+      <img src="./images/image-product-1-thumbnail.jpg" data-index="1" alt="product" class="active-1">
+      <img src="./images/image-product-2-thumbnail.jpg" data-index="2" alt="product">
+      <img src="./images/image-product-3-thumbnail.jpg" data-index="3" alt="product">
+      <img src="./images/image-product-4-thumbnail.jpg" data-index="4" alt="product">
+    </div>
+   </div>
+  </section>
+
+
+
+  <section class="main-section">
+    <aside>
+      <div class="img-slider">
+        <img src="./images/image-product-1.jpg" alt="product" width="450" class="active">
+        <img src="./images/image-product-2.jpg" alt="product" width="450">
+        <img src="./images/image-product-3.jpg" alt="product" width="450">
+        <img src="./images/image-product-4.jpg" alt="product" width="450">
+      </div>
+      <div class="control-2-pr">
+        <img src="./images/icon-previous.svg" alt="prevues" class="pr">
+      </div>
+      <div class="control-2-nx">
+        <img src="./images/icon-next.svg" alt="next" class="next">
+      </div>
+      <div class="contorl">
+        <img src="./images/image-product-1-thumbnail.jpg" data-index="1" alt="product" class="active-1">
+        <img src="./images/image-product-2-thumbnail.jpg" data-index="2" alt="product">
+        <img src="./images/image-product-3-thumbnail.jpg" data-index="3" alt="product">
+        <img src="./images/image-product-4-thumbnail.jpg" data-index="4" alt="product">
+      </div>
+    </aside>
+    <main>
+      <h1>Sneaker Company</h1>
+      <h2>Fall Limited Edition Sneakers</h2>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+      <div class="price">
+        <div class="price-now">$125.00 <span class="discount">50%</span></div>
+        <div class="prevues-price">$250.00</div>
+      </div>
+      <div class="quantity">
+        <div class="quantity-1">
+          <img src="./images/icon-minus.svg" alt="minus" id="minus" class="minus">
+          <div class="quantity-number" id="quantity-number">0</div>
+          <img src="./images/icon-plus.svg" alt="plus" id="plus" class="plus">
+        </div>
+        <div class="quantity-2">
+          <img src="./images/icon-cart.svg" alt="cart">
+          Add to cart
+        </div>
+      </div>
+    </main>
+  </section>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ABK-97?tab=repositories" target="_blank">ABK-97</a>.
+  </div>
+  <script src="./js/slider-1.js"></script>
+  <script src="./js/cart.js"></script>
+</body>
+</html>
